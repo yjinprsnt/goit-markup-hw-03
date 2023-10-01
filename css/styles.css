@@ -42,7 +42,13 @@ body {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.btn {
+  cursor: pointer;
 }
 
 /* ====== Page header ====== */
@@ -94,30 +100,39 @@ body {
 
 /* ====== Hero section ====== */
 .hero {
-  color: var(--main-bg-cl);
+  text-align: center;
   background-color: var(--dark-bg-cl);
+  color: var(--main-bg-cl);
 }
 
 .hero-title {
+  min-width: 696px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
-}
-
-.btn {
-  cursor: pointer;
 }
 
 .feedback-btn {
-  color: var(--main-bg-cl);
-  background-color: var(--accent-cl);
+  display: inline-block;
+  min-width: 216px;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
+
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
 }
 
 .feedback-btn:hover,
@@ -127,41 +142,76 @@ body {
 /* ====== /Hero section ====== */
 
 /* ====== Advantage section ====== */
+.advantag {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .advantag-subtitle {
-  color: var(--secondary-txt-cl);
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-cl);
+}
+
+.advantag-desc {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* ====== /Advantage section ====== */
 
 /* ====== About section ====== */
+.about {
+  padding-bottom: 94px;
+}
+
 .about-title,
 .team-title {
-  color: var(--secondary-txt-cl);
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+
+  color: var(--secondary-txt-cl);
 }
 /* ====== /About section ====== */
 
 /* ====== Team section ====== */
 .team {
+  padding-bottom: 94px;
+
   background-color: var(--secondary-bg-cl);
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-subtitle {
-  color: var(--secondary-txt-cl);
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-cl);
 }
 
 .team-deck {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.18;
 }
@@ -169,15 +219,31 @@ body {
 
 /* ====== Footer ====== */
 .foot {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--dark-bg-cl);
 }
 
+.logo-foot {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
 .foot-address-block {
+  display: block;
+
   font-style: inherit;
 }
 
 .foot-contact-address-link {
+  padding-bottom: 9px;
+
   color: var(--main-bg-cl);
+}
+
+.foot-contact-mail-link {
+  padding-bottom: 9px;
 }
 
 .foot-contact-mail-link,
@@ -247,3 +313,10 @@ body {
 /* ====== /Work section ====== */
 
 /* =============== /Portfolio =============== */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid #000000;
+}
