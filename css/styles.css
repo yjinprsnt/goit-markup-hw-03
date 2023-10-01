@@ -1,0 +1,249 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* text color */
+  --main-txt-cl: #757575;
+  --secondary-txt-cl: #212121;
+  --accent-cl: #2196f3;
+
+  /* bacground text color */
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  color: var(--main-txt-cl);
+  background-color: var(--main-bg-cl);
+
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ====== Page header ====== */
+/* = logo = */
+.logo {
+  color: var(--accent-cl);
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo-white {
+  color: #000000;
+}
+.logo-dark {
+  color: var(--main-bg-cl);
+}
+/* = /logo = */
+/* = link-list = */
+.page-link {
+  color: var(--secondary-txt-cl);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.page-link:hover,
+.page-link:focus,
+.contact-mail-link:hover,
+.contact-mail-link:focus,
+.contact-tel-link:hover,
+.contact-tel-link:focus {
+  color: var(--accent-cl);
+}
+
+.active-link {
+  color: var(--accent-cl);
+}
+/* = /link-list = */
+/* = contact-list = */
+.contact-mail-link,
+.contact-tel-link {
+  color: currentColor;
+  font-weight: 500;
+}
+/* = /contact-list = */
+/* ====== /Page header ====== */
+
+/* ====== Hero section ====== */
+.hero {
+  color: var(--main-bg-cl);
+  background-color: var(--dark-bg-cl);
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.feedback-btn {
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.feedback-btn:hover,
+.feedback-btn:focus {
+  background-color: #188ce8;
+}
+/* ====== /Hero section ====== */
+
+/* ====== Advantage section ====== */
+.advantag-subtitle {
+  color: var(--secondary-txt-cl);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+/* ====== /Advantage section ====== */
+
+/* ====== About section ====== */
+.about-title,
+.team-title {
+  color: var(--secondary-txt-cl);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+/* ====== /About section ====== */
+
+/* ====== Team section ====== */
+.team {
+  background-color: var(--secondary-bg-cl);
+}
+
+.team-subtitle {
+  color: var(--secondary-txt-cl);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.team-deck {
+  font-size: 16px;
+  line-height: 1.18;
+}
+/* ====== /Team section ====== */
+
+/* ====== Footer ====== */
+.foot {
+  background-color: var(--dark-bg-cl);
+}
+
+.foot-address-block {
+  font-style: inherit;
+}
+
+.foot-contact-address-link {
+  color: var(--main-bg-cl);
+}
+
+.foot-contact-mail-link,
+.foot-contact-tel-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.foot-contact-address-link:hover,
+.foot-contact-address-link:focus,
+.foot-contact-mail-link:hover,
+.foot-contact-mail-link:focus,
+.foot-contact-tel-link:hover,
+.foot-contact-tel-link:focus {
+  color: var(--accent-cl);
+}
+/* ====== /Footer ====== */
+
+/* =============== Portfolio =============== */
+
+/* ====== Work section ====== */
+
+/* = Project filter = */
+.work-filter-btn {
+  color: var(--secondary-txt-cl);
+  background-color: var(--secondary-bg-cl);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.work-filter-btn:hover,
+.work-filter-btn:focus {
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
+}
+
+.active-btn {
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
+}
+/* = /Project filter = */
+
+/* = Project list = */
+.project-subtitle {
+  color: var(--secondary-txt-cl);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-deck {
+  color: var(--main-txt-cl);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.project-subtitle:hover,
+.project-subtitle:focus,
+.project-deck:hover,
+.project-deck:focus {
+  color: var(--accent-cl);
+}
+/* = /Project list = */
+
+/* ====== /Work section ====== */
+
+/* =============== /Portfolio =============== */
