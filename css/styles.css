@@ -11,6 +11,8 @@
   --main-bg-cl: #ffffff;
   --secondary-bg-cl: #f5f4fa;
   --dark-bg-cl: #2f303a;
+
+  --gap-between-cards: 30px;
 }
 
 .visually-hidden {
@@ -43,7 +45,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid #000000;
+  /* outline: 2px solid #000000; */
 }
 
 h1,
@@ -200,6 +202,7 @@ img {
   min-width: 216px;
   min-height: 50px;
   border-radius: 4px;
+  border: none;
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -377,14 +380,31 @@ img {
 
 /* = Project filter = */
 .work-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-bottom: 50px;
 }
 
+.work-item {
+  margin-right: 8px;
+}
+
+.work-item:last-child {
+  margin-right: 0;
+}
+
 .work-filter-btn {
-  /* padding-top: 6px;
-  padding-right: 22px;
+  display: block;
+
+  padding-top: 6px;
+  padding-right: 25px;
   padding-bottom: 6px;
-  padding-left: 22px; */
+  padding-left: 25px;
+
+  border-radius: 4px;
+  border: none;
 
   font-size: 16px;
   font-weight: 500;
@@ -408,12 +428,31 @@ img {
 /* = /Project filter = */
 
 /* = Project list = */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--gap-between-cards));
+  margin-left: calc(-1 * var(--gap-between-cards));
+}
+
+.project-item {
+  flex-basis: calc(100% / 3 - var(--gap-between-cards));
+
+  margin-top: var(--gap-between-cards);
+  margin-left: var(--gap-between-cards);
+
+  min-width: 370px;
+  min-height: 404px;
+  border: 1px solid #eeeeee;
+}
+
 .project-img {
   padding-bottom: 20px;
 }
 
 .project-subtitle {
   margin-bottom: 4px;
+  margin-left: 24px;
 
   font-size: 18px;
   font-weight: 700;
@@ -424,8 +463,7 @@ img {
 }
 
 .project-deck {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-left: 24px;
 
   font-size: 16px;
   line-height: 1.87;
