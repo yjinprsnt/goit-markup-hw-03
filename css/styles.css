@@ -37,6 +37,34 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -49,15 +77,6 @@ body {
 
 .btn {
   cursor: pointer;
-}
-
-.container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid #000000;
 }
 
 /* ====== Page header ====== */
@@ -128,6 +147,7 @@ body {
 .feedback-btn {
   display: inline-block;
   min-width: 216px;
+  min-height: 50px;
   border-radius: 4px;
   padding-top: 10px;
   padding-right: 32px;
@@ -151,11 +171,6 @@ body {
 /* ====== /Hero section ====== */
 
 /* ====== Advantage section ====== */
-.advantag {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .advantag-subtitle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -176,7 +191,7 @@ body {
 
 /* ====== About section ====== */
 .about {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .about-title,
@@ -196,8 +211,6 @@ body {
 
 /* ====== Team section ====== */
 .team {
-  padding-bottom: 94px;
-
   background-color: var(--secondary-bg-cl);
 }
 
@@ -275,11 +288,6 @@ body {
 /* ====== Work section ====== */
 
 /* = Project filter = */
-.work {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .work-list {
   margin-bottom: 50px;
 }
@@ -312,6 +320,10 @@ body {
 /* = /Project filter = */
 
 /* = Project list = */
+.project-img {
+  padding-bottom: 20px;
+}
+
 .project-subtitle {
   margin-top: 0;
   margin-bottom: 4px;
@@ -322,10 +334,6 @@ body {
   letter-spacing: 0.06em;
 
   color: var(--secondary-txt-cl);
-}
-
-.project-img {
-  padding-bottom: 20px;
 }
 
 .project-deck {
