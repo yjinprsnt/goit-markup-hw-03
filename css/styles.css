@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -81,12 +81,20 @@ img {
 
 /* ====== Page header ====== */
 /* = logo = */
+.page-header {
+  border: 1px solid #ececec;
+}
+
 .logo {
   color: var(--accent-cl);
   font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.logo-header {
+  margin-right: 93px;
 }
 
 .logo-white {
@@ -97,11 +105,39 @@ img {
 }
 /* = /logo = */
 /* = link-list = */
+.page-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-list {
+  display: flex;
+  align-items: center;
+}
+
+.page-item {
+  margin-right: 50px;
+}
+
+.page-item:last-child {
+  margin-right: 0;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
 .page-link {
-  color: var(--secondary-txt-cl);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-cl);
 }
 
 .page-link:hover,
@@ -118,6 +154,19 @@ img {
 }
 /* = /link-list = */
 /* = contact-list = */
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-item {
+  margin-right: 50px;
+}
+
+.contact-item:last-child {
+  margin-right: 0;
+}
+
 .contact-mail-link,
 .contact-tel-link {
   color: currentColor;
@@ -129,13 +178,15 @@ img {
 /* ====== Hero section ====== */
 .hero {
   text-align: center;
+
   background-color: var(--dark-bg-cl);
   color: var(--main-bg-cl);
 }
 
 .hero-title {
-  min-width: 696px;
-  margin-top: 0;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-size: 44px;
@@ -171,8 +222,20 @@ img {
 /* ====== /Hero section ====== */
 
 /* ====== Advantage section ====== */
+.advantag-list {
+  display: flex;
+}
+
+.advantag-item {
+  min-width: 270px;
+  margin-right: 30px;
+}
+
+.advantag-item:last-child {
+  margin-right: 0;
+}
+
 .advantag-subtitle {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -182,11 +245,6 @@ img {
 
   color: var(--secondary-txt-cl);
 }
-
-.advantag-desc {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 /* ====== /Advantage section ====== */
 
 /* ====== About section ====== */
@@ -194,9 +252,20 @@ img {
   padding-top: 0;
 }
 
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  margin-right: 30px;
+}
+
+.about-item:last-child {
+  margin-right: 0;
+}
+
 .about-title,
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -214,12 +283,31 @@ img {
   background-color: var(--secondary-bg-cl);
 }
 
+.team-list {
+  display: flex;
+
+  text-align: center;
+}
+
+.team-item {
+  margin-right: 30px;
+
+  min-width: 270px;
+  min-height: 368px;
+
+  border-radius: 0 0 4px 4px;
+  background-color: var(--main-bg-cl);
+}
+
+.team-item:last-child {
+  margin-right: 0;
+}
+
 .team-img {
   margin-bottom: 30px;
 }
 
 .team-subtitle {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-size: 16px;
@@ -325,7 +413,6 @@ img {
 }
 
 .project-subtitle {
-  margin-top: 0;
   margin-bottom: 4px;
 
   font-size: 18px;
