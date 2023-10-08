@@ -180,6 +180,8 @@ img {
 /* ====== Hero section ====== */
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: var(--dark-bg-cl);
   color: var(--main-bg-cl);
