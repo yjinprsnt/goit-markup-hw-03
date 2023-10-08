@@ -342,7 +342,7 @@ img {
 
 .logo-foot {
   display: inline-block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .foot-address-block {
@@ -351,14 +351,16 @@ img {
   font-style: inherit;
 }
 
-.foot-contact-address-link {
-  padding-bottom: 9px;
-
-  color: var(--main-bg-cl);
+.foot-address-item {
+  margin-bottom: 9px;
 }
 
-.foot-contact-mail-link {
-  padding-bottom: 9px;
+.foot-address-item:last-child {
+  margin-bottom: 0;
+}
+
+.foot-contact-address-link {
+  color: var(--main-bg-cl);
 }
 
 .foot-contact-mail-link,
