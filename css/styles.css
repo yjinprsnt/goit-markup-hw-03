@@ -11,6 +11,7 @@
   --main-bg-cl: #ffffff;
   --secondary-bg-cl: #f5f4fa;
   --dark-bg-cl: #2f303a;
+  --border-item-cl: #eeeeee;
 
   --gap-between-cards: 30px;
 }
@@ -447,11 +448,6 @@ img {
 
   min-width: 370px;
   min-height: 404px;
-  border: 1px solid #eeeeee;
-}
-
-.project-img {
-  padding-bottom: 20px;
 }
 
 .project-item-content {
@@ -459,6 +455,10 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+
+  border-right: 1px solid var(--border-item-cl);
+  border-bottom: 1px solid var(--border-item-cl);
+  border-left: 1px solid var(--border-item-cl);
 }
 
 .project-subtitle {
