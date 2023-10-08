@@ -307,6 +307,11 @@ img {
   margin-right: 0;
 }
 
+.team-item-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-subtitle {
   margin-bottom: 10px;
 
