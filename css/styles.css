@@ -298,7 +298,6 @@ img {
   margin-right: 30px;
 
   min-width: 270px;
-  min-height: 368px;
 
   border-radius: 0 0 4px 4px;
   background-color: var(--main-bg-cl);
@@ -306,10 +305,6 @@ img {
 
 .team-item:last-child {
   margin-right: 0;
-}
-
-.team-img {
-  margin-bottom: 30px;
 }
 
 .team-subtitle {
