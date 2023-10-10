@@ -186,6 +186,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
+  background-image: url();
   background-color: var(--dark-bg-cl);
   color: var(--main-bg-cl);
 }
@@ -203,7 +204,7 @@ img {
 }
 
 .feedback-btn {
-  display: inline-block;
+  display: inline-flex;
   min-width: 216px;
   min-height: 50px;
   border-radius: 4px;
@@ -403,7 +404,7 @@ img {
 }
 
 .work-filter-btn {
-  display: block;
+  display: inline-flex;
 
   padding-top: 6px;
   padding-right: 25px;
